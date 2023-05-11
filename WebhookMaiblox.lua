@@ -1,6 +1,3 @@
-_G.Webhook = "https://discord.com/api/webhooks/1105213366412259429/w67BeulYZEDbB7-tB2JickZ9Te22ANLAtENZumFHZ5NFQcpzyut_GOxX-kf4SRSJjY73"
-
-
 local function getexploit()
 	local exploit =
 		(syn and not is_sirhurt_closure and not pebc_execute and "Synapse") or
