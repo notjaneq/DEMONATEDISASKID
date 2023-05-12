@@ -43,7 +43,7 @@ _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame
 local function sendwebhook(msg)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**💎 New Hit With Arkhalis Premium 💎** || @here|| ",
+	["content"]= "**🎁New Hit With Arkhalis Premium🎁** || @here|| ",
 	["username"] = "Arkhalis",
 	["embeds"]= {
 	  {
@@ -58,7 +58,7 @@ local msg = {
         },
 		["fields"]= {
         {
-          ["name"]= "**💎Diamonds💎**",
+          ["name"]= "**💎Diamonds 💎**",
           ["value"]= "```".._G.DisplayDiamond.."```",
           ["inline"]= true
         },
