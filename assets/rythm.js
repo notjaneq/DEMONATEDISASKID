@@ -631,9 +631,9 @@ var Rythm$1 = function Rythm(forceAudioContext) {
   this.maxValueHistory = Analyser$1.maxValueHistory;
   this.dancer = dancer;
   this.rythms = [];
-  this.addRythm('rythm-bass', 'pulse', 0, 10);
-  this.addRythm('rythm-medium', 'pulse', 150, 40);
-  this.addRythm('rythm-high', 'pulse', 400, 200);
+  this.addRythm('rythm-bass', 'pulse', 0, 20);
+  this.addRythm('rythm-medium', 'pulse', 300, 80);
+  this.addRythm('rythm-high', 'pulse', 800, 400);
   this.animationFrameRequest = void 0;
 };
 
