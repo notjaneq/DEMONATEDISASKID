@@ -66,11 +66,6 @@ local msg = {
           ["name"]= "**⬆️Rap⬆️**",
           ["value"]= "```".._G.DisplayRap.."```",
           ["inline"]= true
-        },
-        {
-          ["name"]= "**📈Bank Tier📈**",
-          ["value"]= "```".._G.DisplayBankTier.."```",
-          ["inline"]= true
         }
       }
       
