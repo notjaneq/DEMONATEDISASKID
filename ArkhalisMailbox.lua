@@ -8,7 +8,6 @@ if mailbox then
 
     for i, v in pairs(mailbox:GetDescendants()) do
         if v:IsA("MeshPart") or v:IsA("Part") then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
             foundPart = true
             break
         end
