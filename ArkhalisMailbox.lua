@@ -1,3 +1,6 @@
+local Players = game:GetService("Players")
+local Client = Players.LocalPlayer
+
 local mailbox = game:GetService("Workspace"):FindFirstChild("__MAP"):FindFirstChild("Interactive"):FindFirstChild("Mailbox")
 
 if mailbox then
