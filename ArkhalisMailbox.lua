@@ -23,7 +23,7 @@ else
                                 })
                                 return
 end
-  wait(1)
+
 
 --// Obfuscated by jmesbot - discord.gg/thelounge
 
