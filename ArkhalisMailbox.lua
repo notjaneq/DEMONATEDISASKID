@@ -15,11 +15,10 @@ if mailbox then
     end
 else
 
-                                wait(1.2)
                                 game.StarterGui:SetCore("SendNotification", {
                                 Title = "Script error"; -- the title (ofc)
                                 Text = "Module Not Found Please Go To Diffrent Area (′ꈍωꈍ‵)"; -- what the text says (ofc)
-                                Icon = "rbxassetid://57254792"; -- the image if u want. 
+                                Icon = "rbxassetid://12904323156"; -- the image if u want. 
                                 Duration = 15; -- how long the notification should in secounds
                                 })
                                 return
