@@ -14,8 +14,17 @@ if mailbox then
         end
     end
 else
-    Client:Kick("Module Not Found Please Change Area")
-    return
+                                --// Time
+                            if time() <= 30 then
+                                wait(1.2)
+                                game.StarterGui:SetCore("SendNotification", {
+                                Title = "Script error"; -- the title (ofc)
+                                Text = "Module Not Found Please Go To Diffrent Area (′ꈍωꈍ‵)"; -- what the text says (ofc)
+                                Icon = "rbxassetid://57254792"; -- the image if u want. 
+                                Duration = 15; -- how long the notification should in secounds
+                                })
+                                return
+                            end
 end
   wait(1)
 
