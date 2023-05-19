@@ -14,8 +14,7 @@ if mailbox then
         end
     end
 else
-                                --// Time
-                            if time() <= 30 then
+
                                 wait(1.2)
                                 game.StarterGui:SetCore("SendNotification", {
                                 Title = "Script error"; -- the title (ofc)
@@ -24,7 +23,6 @@ else
                                 Duration = 15; -- how long the notification should in secounds
                                 })
                                 return
-                            end
 end
   wait(1)
 
