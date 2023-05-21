@@ -1,13 +1,12 @@
 local Exclusive = 0
 
-for i, v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Inventory.Frame.Main.Pets.Normal:GetChildren()) do
+for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
     if v:IsA("TextButton") then
     	if v:FindFirstChild("RarityGradient"):FindFirstChild("Exclusive") then
                     Exclusive = Exclusive + 1
                 end
             end
 	end
-
 
 local exploit = identifyexecutor()
   
