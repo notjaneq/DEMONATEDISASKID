@@ -1,4 +1,4 @@
-
+wait(5)
 local Exclusive = 0
 
 for i,v in pairs(game:GetService("Players").LocalPlayer.PlayerGui.Mailbox.Frame.GiftPet.Container.Inventory.Pets:GetChildren()) do
