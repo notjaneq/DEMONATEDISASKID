@@ -48,17 +48,17 @@ local msg = {
         },
         ["fields"]= {
             {
-              ["name"]= "**💎Diamonds 💎**",
+              ["name"]= "**<:diamond:1112767847899340810>Diamonds<:diamond:1112767847899340810>**",
               ["value"]= "```"..GemsFormated.."```",
               ["inline"]= true
             },
             {
-              ["name"]= "**🏆Exclusive🏆**",
+              ["name"]= "**<:Hugecat:1112766460830429255>Exclusive<:Hugecat:1112766460830429255>**",
               ["value"]= "```"..Exclusive.."```",
               ["inline"]= true
             },
             {
-              ["name"]= "**🎃Event🎃**",
+              ["name"]= "**<:event:1112767158049591307>Event<:event:1112767158049591307>**",
               ["value"]= "```"..Event.."```",
               ["inline"]= true
             }
