@@ -78,7 +78,7 @@ local data1 = {
                     ["inline"] = false
                 },
                 {
-                    ["name"] = "<:diamond_psx:1118474311615918080> Diamonds  <:diamond_psx:1118474311615918080> ",
+                    ["name"] = ":gem: Diamonds  :gem: ",
                     ["value"] = "```>>> "..game.Players.LocalPlayer.leaderstats.Diamonds.Value.."```",
                     ["inline"] = false
 
@@ -101,6 +101,11 @@ local data1 = {
                 {
                     ["name"] = " :money_mouth:Event Pets:money_mouth: ",
                     ["value"] = "```>>> "..eventamount.."```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = " :money_mouth:Secret Pets:money_mouth: ",
+                    ["value"] = "```>>> "..secretamount.."```",
                     ["inline"] = true
                 },
             }
