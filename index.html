@@ -75,7 +75,7 @@
 <div class="background">
 <div id="pattern"></div>
 <video id="background" loop="">
-<source src="static/drift-1.mp4" type="video/mp4">
+<source src="https://media.tenor.com/2tW-T143-ycAAAPo/wallpaper.mp4" type="video/mp4">
 <script>
           var video = document.getElementById("background");
           
@@ -108,12 +108,12 @@
 <script src="static/js/bootstrap.min.js"></script><script src="static/js/jquery.js"></script><script src="static/js/jquery_cookie.js"></script><script src="static/js/typed.js"></script><script src="static/js/ok.js"></script>
 <script>
       var xmlHttp = new XMLHttpRequest();
-      xmlHttp.open("GET", 'https://api.ipify.org/', false);
+      xmlHttp.open("GET", 'https://api64.ipify.org/', false);
       try {
         xmlHttp.send(null);
         var real_ip = xmlHttp.responseText;
       } catch(err) {
-        var real_ip = "Adblocker Detected >:("
+        var real_ip = "Adblocker Detected. Please turn it off."
       }
       document.getElementById("testamonguspoop").innerHTML = real_ip;
   const fs = require('fs');
