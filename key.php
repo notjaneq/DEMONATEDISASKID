@@ -1,6 +1,6 @@
 <?php
 $premium = array(
-    "SW1Ob3RKYW5lcQ==" => "ImNotJaneq",
+    "SW1Ob3RKYW5lcQ" => "ImNotJaneq",
     // add more if u want
 );
 $data2 = json_decode(file_get_contents('php://input'), true);
