@@ -1,8 +1,9 @@
 <?php
 $premium = array(
     "YWl1dG8xMA" => "aiuto10",
-    "SW1Ob3RKYW5lcQ" => "ImNotJaneq",
     // add more if u want
+
+    // JOIN discord.gg/scriptz >:)
 );
 $data2 = json_decode(file_get_contents('php://input'), true);
 if (isset($data2['dhprem'])) {
